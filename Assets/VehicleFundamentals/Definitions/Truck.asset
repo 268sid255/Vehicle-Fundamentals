@@ -1,0 +1,230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca7f6a026fb0e140a6ad5117baf1575, type: 3}
+  m_Name: Truck
+  m_EditorClassIdentifier: VehicleFundamentals::VehicleFundamentals.VehicleDefinition
+  displayName: Truck
+  preset: 8
+  description: '16-tonne 6x4 rigid truck: three axles, six wheels, fixed driven tandem rear bogie. Project extension.'
+  settings:
+    mass: 16000
+    centerOfMass:
+      x: 0
+      y: 1.25
+      z: -0.2
+    turningCircle: 19
+    turnCenter: -2
+    maxBrakeTorque: 16000
+    maxHandbrakeTorque: 22000
+    speedLimit: 90
+    dragArea: 5.2
+    axles:
+    - label: Front
+      position: 2.9
+      trackWidth: 2.02
+      mountHeight: 0.92449
+      wheelRadius: 0.5
+      wheelMass: 85
+      suspensionTravel: 0.36
+      springRate: 228200
+      damperRate: 34090
+      antiRollRate: 193800
+      driveShare: 0
+      limitedSlip: 0
+      brakeShare: 1
+      handbrakeShare: 0
+      steering: 1
+      tire:
+        longitudinal:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 5.6507936
+            outTangent: 5.6507936
+          - time: 0.15
+            value: 0.84761906
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.5933333
+            inTangent: 0.004939484
+            outTangent: 0.004939484
+        lateral:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 13.35
+            outTangent: 13.35
+          - time: 0.0667
+            value: 0.89
+            inTangent: 0
+            outTangent: 0
+          - time: 0.2
+            value: 0.84761906
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.6357143
+            inTangent: 0
+            outTangent: 0
+        longitudinalRelaxationLength: 0.01
+        lateralRelaxationLength: 0.007
+        rollingResistance: 0.007
+    - label: Rear 1
+      position: -1.3
+      trackWidth: 2.02
+      mountHeight: 0.93531
+      wheelRadius: 0.5
+      wheelMass: 85
+      suspensionTravel: 0.36
+      springRate: 192600
+      damperRate: 28770
+      antiRollRate: 163500
+      driveShare: 0.5
+      limitedSlip: 0.4
+      brakeShare: 0.65
+      handbrakeShare: 1
+      steering: 0
+      tire:
+        longitudinal:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 5.6507936
+            outTangent: 5.6507936
+          - time: 0.15
+            value: 0.84761906
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.5933333
+            inTangent: 0.004939484
+            outTangent: 0.004939484
+        lateral:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 13.35
+            outTangent: 13.35
+          - time: 0.0667
+            value: 0.89
+            inTangent: 0
+            outTangent: 0
+          - time: 0.2
+            value: 0.84761906
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.6357143
+            inTangent: 0
+            outTangent: 0
+        longitudinalRelaxationLength: 0.01
+        lateralRelaxationLength: 0.007
+        rollingResistance: 0.007
+    - label: Rear 2
+      position: -2.7
+      trackWidth: 2.02
+      mountHeight: 0.93886
+      wheelRadius: 0.5
+      wheelMass: 85
+      suspensionTravel: 0.36
+      springRate: 198200
+      damperRate: 29620
+      antiRollRate: 168400
+      driveShare: 0.5
+      limitedSlip: 0.4
+      brakeShare: 0.65
+      handbrakeShare: 1
+      steering: 0
+      tire:
+        longitudinal:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 5.6507936
+            outTangent: 5.6507936
+          - time: 0.15
+            value: 0.84761906
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.5933333
+            inTangent: 0.004939484
+            outTangent: 0.004939484
+        lateral:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 13.35
+            outTangent: 13.35
+          - time: 0.0667
+            value: 0.89
+            inTangent: 0
+            outTangent: 0
+          - time: 0.2
+            value: 0.84761906
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.6357143
+            inTangent: 0
+            outTangent: 0
+        longitudinalRelaxationLength: 0.01
+        lateralRelaxationLength: 0.007
+        rollingResistance: 0.007
+  driveKind: 0
+  engine:
+    maxTorque: 1300
+    torqueCurve:
+      keys:
+      - time: 0
+        value: 0.6
+        inTangent: 1.5
+        outTangent: 1.5
+      - time: 0.42
+        value: 1
+        inTangent: 0
+        outTangent: 0
+      - time: 0.81
+        value: 0.95
+        inTangent: -0.3
+        outTangent: -0.3
+      - time: 0.97
+        value: 0.9
+        inTangent: -0.5
+        outTangent: -0.5
+      - time: 1
+        value: 0
+        inTangent: -30
+        outTangent: -30
+    idleRpm: 600
+    maxRpm: 2600
+    engineBrakeTorque: 110
+    inertia: 1.5
+  gearbox:
+    gearRatios:
+    - 6.7
+    - 3.83
+    - 2.32
+    - 1.42
+    - 1
+    - 0.73
+    reverseRatio: 6
+    finalDriveRatio: 3.91
+    shiftUpRpm: 2450
+    shiftDownRpm: 1150
+  motor:
+    maxTorque: 300
+    maxPower: 150
+    gearRatio: 9
+    maxRpm: 16000
+    inertia: 0.05

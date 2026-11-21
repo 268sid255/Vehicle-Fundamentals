@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca7f6a026fb0e140a6ad5117baf1575, type: 3}
+  m_Name: Drift Nissan_Skyline
+  m_EditorClassIdentifier: VehicleFundamentals::VehicleFundamentals.VehicleDefinition
+  displayName: Drift Nissan Skyline
+  preset: 10
+  visualVariant: 4
+  description: RWD drift setup with increased torque and differential locking. Project tuning extension.
+  settings:
+    mass: 1420
+    centerOfMass:
+      x: 0
+      y: 0.45
+      z: 0.125
+    turningCircle: 8
+    turnCenter: -1.26
+    maxBrakeTorque: 4000
+    maxHandbrakeTorque: 8000
+    speedLimit: 0
+    dragArea: 0.64
+    axles:
+    - label: Front
+      position: 1.51
+      trackWidth: 1.48
+      mountHeight: 0.54146
+      wheelRadius: 0.35
+      wheelMass: 20
+      suspensionTravel: 0.22
+      springRate: 56100
+      damperRate: 5360
+      antiRollRate: 9800
+      driveShare: 0
+      limitedSlip: 0
+      brakeShare: 1
+      handbrakeShare: 0
+      steering: 1
+      tire:
+        longitudinal:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 6.6666665
+            outTangent: 6.6666665
+          - time: 0.15
+            value: 1
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.7
+            inTangent: 0.005827481
+            outTangent: 0.005827481
+        lateral:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 15.75
+            outTangent: 15.75
+          - time: 0.0667
+            value: 1.05
+            inTangent: 0
+            outTangent: 0
+          - time: 0.2
+            value: 1
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.75
+            inTangent: 0
+            outTangent: 0
+        longitudinalRelaxationLength: 0.01
+        lateralRelaxationLength: 0.007
+        rollingResistance: 0.012
+    - label: Rear
+      position: -1.26
+      trackWidth: 1.48
+      mountHeight: 0.54146
+      wheelRadius: 0.35
+      wheelMass: 20
+      suspensionTravel: 0.22
+      springRate: 56100
+      damperRate: 5360
+      antiRollRate: 9800
+      driveShare: 1
+      limitedSlip: 0.9
+      brakeShare: 0.5
+      handbrakeShare: 1
+      steering: 1
+      tire:
+        longitudinal:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 6.6666665
+            outTangent: 6.6666665
+          - time: 0.15
+            value: 1
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.7
+            inTangent: 0.005827481
+            outTangent: 0.005827481
+        lateral:
+          keys:
+          - time: 0
+            value: 0
+            inTangent: 15.75
+            outTangent: 15.75
+          - time: 0.0667
+            value: 1.05
+            inTangent: 0
+            outTangent: 0
+          - time: 0.2
+            value: 1
+            inTangent: 0
+            outTangent: 0
+          - time: 1
+            value: 0.75
+            inTangent: 0
+            outTangent: 0
+        longitudinalRelaxationLength: 0.01
+        lateralRelaxationLength: 0.007
+        rollingResistance: 0.012
+  driveKind: 0
+  engine:
+    maxTorque: 500
+    torqueCurve:
+      keys:
+      - time: 0
+        value: 0.6
+        inTangent: 1.5
+        outTangent: 1.5
+      - time: 0.42
+        value: 1
+        inTangent: 0
+        outTangent: 0
+      - time: 0.81
+        value: 0.95
+        inTangent: -0.3
+        outTangent: -0.3
+      - time: 0.97
+        value: 0.9
+        inTangent: -0.5
+        outTangent: -0.5
+      - time: 1
+        value: 0
+        inTangent: -30
+        outTangent: -30
+    idleRpm: 900
+    maxRpm: 7500
+    engineBrakeTorque: 40
+    inertia: 0.25
+  gearbox:
+    gearRatios:
+    - 4.2
+    - 2.49
+    - 1.66
+    - 1.24
+    - 1
+    reverseRatio: 3.8
+    finalDriveRatio: 3.556
+    shiftUpRpm: 6500
+    shiftDownRpm: 3000
+  motor:
+    maxTorque: 300
+    maxPower: 150
+    gearRatio: 9
+    maxRpm: 16000
+    inertia: 0.05
