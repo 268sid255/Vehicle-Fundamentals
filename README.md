@@ -106,7 +106,7 @@ Unity YAML files use the `unityyamlmerge` attribute in `.gitattributes`. Configu
 
 ## License and credits
 
-Project code: [MIT License](LICENSE.md), copyright © 2026 Valery Balakishiev.
+Project code: [MIT License](LICENSE), copyright © 2026 Valery Balakishiev.
 
 - Physics reference: **Prototype Everything — [Vehicle Fundamentals](https://vehicle-fundamentals.prototypeeverything.com/)**.
 - Main vehicle models: **[thcyrax](https://sketchfab.com/thcyrax)**, from their [Sketchfab collection](https://sketchfab.com/thcyrax/models).

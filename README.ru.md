@@ -106,7 +106,7 @@
 
 ## Лицензия и авторство
 
-Код проекта распространяется по [лицензии MIT](LICENSE.md). © 2026 Valery Balakishiev.
+Код проекта распространяется по [лицензии MIT](LICENSE). © 2026 Valery Balakishiev.
 
 - Референс физики: **Prototype Everything — [Vehicle Fundamentals](https://vehicle-fundamentals.prototypeeverything.com/)**.
 - Основные модели автомобилей: **[thcyrax](https://sketchfab.com/thcyrax)**, из его [коллекции на Sketchfab](https://sketchfab.com/thcyrax/models).
